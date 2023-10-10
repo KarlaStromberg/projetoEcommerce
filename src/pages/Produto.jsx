@@ -1,10 +1,13 @@
-import { Container } from "react-bootstrap";
+
+import { ListaProdutos } from "../componentes/ListaProdutos";
+import NavBar from "../componentes/NavBar"
 
 function Produto (){
     return(
-        <Container>
-            <p>Produto</p>
-        </Container>
+        <>
+        <NavBar/>
+        <ListaProdutos/>
+        </>
     );
 }
 
