@@ -6,6 +6,7 @@ function Produto (){
     return(
         <>
         <NavBar/>
+        <div style={{paddingTop:"90px"}}></div>
         <ListaProdutos/>
         </>
     );

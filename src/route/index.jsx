@@ -3,6 +3,7 @@ import { ListaProdutos } from "../componentes/ListaProdutos";
 import { Produto } from "../pages/Produto";
 import { Home } from "../pages/Home"
 import { Login } from "../pages/login";
+import { Carrinho } from "../pages/Carrinho";
 
 export function RouteApp() {
     return (
@@ -10,7 +11,8 @@ export function RouteApp() {
             <Routes>
                 <Route path="/" element={<Home/>} />
                 <Route path="/produtos" element={<Produto />} />
-                
+                <Route path="/login" element={<Login/>} />
+                <Route path="/carrinho" element={<Carrinho/>} />
             </Routes>
         </BrowserRouter>
     )

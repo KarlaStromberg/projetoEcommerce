@@ -37,12 +37,16 @@ export default App;
 import { RouteApp } from "./route";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import CarrinhoContextProvider from "./hooks/CarrinhoContext";
+import "font-awesome/css/font-awesome.css"
 
 function App() {
   return (
     <>
+    <CarrinhoContextProvider>
       <ToastContainer/>
       <RouteApp/>
+    </CarrinhoContextProvider>
     </>
   );
 }

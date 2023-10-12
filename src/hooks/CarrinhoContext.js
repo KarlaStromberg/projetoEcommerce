@@ -43,6 +43,16 @@ function CarrinhoContextProvider({ children }) {
 
     const listaProdutosAtualizado = [produto, ...listaProdutosCarrinho];
     salvarProdutos(listaProdutosAtualizado);
+    toast.success("Produto adicionado", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
   };
   function removerProduto(idProduto) {
     const listaProdutosAtualizado = listaProdutosCarrinho.filter(
