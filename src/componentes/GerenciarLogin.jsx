@@ -41,7 +41,7 @@ function GerenciarLogin()
       <Row>
         <Col md={12}>
           <a href="/login">
-            <Button variant="primary">Login</Button>{" "}
+            <Button variant="light">Login</Button>{" "}
           </a>
         </Col>
       </Row>
@@ -70,7 +70,7 @@ function GerenciarLogin()
         <i className="fa fa-at"> {emailUsuario}</i>
       </Col>
       <Col md={2}>
-        <Button variant="danger" onClick={() => removerDadosLocalStorage()}>
+        <Button variant="light" onClick={() => removerDadosLocalStorage()}>
           Sair
         </Button>{" "}
       </Col>
