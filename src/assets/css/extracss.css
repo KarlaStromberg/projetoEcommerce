@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;600&display=swap');
+
+.font{
+    font-family: 'Gabarito', sans-serif;
+}
+
+.links-nav{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+:root {
+    --toastify-color-success: #7ECABC;
+    --toastify-color-error: #fe4a49;
+}
+
+.marginForSections{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.marginForBlocks{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.cardForCollection{
+    display: flex;
+    justify-content: center;
+    max-width: 1300px;
+    background-color: rgba(193,65,105,0.5);
+    border-radius: 5px;
+}
+
+.titles{
+    margin:10px;
+    font-size: 50px;
+    text-align: center;
+}

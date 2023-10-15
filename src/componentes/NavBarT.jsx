@@ -4,10 +4,29 @@ import { GerenciarLogin } from './GerenciarLogin';
 import logo from "../assets/images/logo.png";
 
 
-function NavBar() {
+function NavBarT() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <Navbar
+        className={isScrolled ? '' : 'bg-opacity-50'} 
         data-bs-theme="dark"
         fixed="top"
         bg="dark"
@@ -32,4 +51,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default NavBarT;

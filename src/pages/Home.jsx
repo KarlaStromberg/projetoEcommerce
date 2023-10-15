@@ -1,14 +1,16 @@
 
-import NavBar from "../componentes/NavBar";
+import NavBarT from "../componentes/NavBarT";
 import CarouselAnuncios from "../componentes/Carousel";
 import { ListaProdutos } from "../componentes/ListaProdutos";
+import PromoBlocks from "../componentes/PromoBlocks";
 
-function Home(){
+function Home(props){
     return(
         <>
-        <NavBar/>
+        <NavBarT/>
         <CarouselAnuncios/>
-        <ListaProdutos/>
+        <PromoBlocks/>
+        <ListaProdutos>{props.children}</ListaProdutos>
         </>
     );
 }

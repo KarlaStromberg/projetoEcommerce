@@ -29,15 +29,18 @@ function CardProduto({ idProduto, nome, preco, descricao, linkImagem }) {
     }  
 
   return (
-    <Card style={{ width: "18rem", margin:"10px", padding:"10px", boxShadow:"rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"}}>
+    <Card bg='light' border="light" style={{ width: "18rem", margin:"10px", padding:"10px", boxShadow:"rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"}} className="font">
       <Card.Img variant="top" src={linkImagem} />
       <Card.Body>
         <Card.Title>
-          {nome} - R$: {preco} 
-        </Card.Title>
+          {nome}
+          </Card.Title>
+          <Card.Title>
+          R$: {preco}
+          </Card.Title>
         <Card.Text>{descricao}</Card.Text>
         <Button
-          variant="dark"
+          variant="success"
           onClick={() =>
             adicionarNoCarrinho(idProduto, nome, preco, descricao, linkImagem)
           }

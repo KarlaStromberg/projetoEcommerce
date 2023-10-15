@@ -6,11 +6,14 @@ import {
   Form,
   Image,
   InputGroup,
+  Navbar,
   Row,
 } from "react-bootstrap";
 import { useNavigate } from "react-router";
 import { toast } from "react-toastify";
 import "../assets/css/login.css";
+import promo3 from "../assets/images/promo3.jpg"
+import NavBar from "../componentes/NavBar"
 
 function Login() {
   const [validated, setValidated] = useState(false);
@@ -87,24 +90,28 @@ function Login() {
   }
 
   return (
-    <Container>
-      <Row style={{ marginTop: "13%" }}>
+    <>
+    <NavBar/>
+    <Container className="font">
+      <Row style={{ marginTop: "9%"}}>
         <Col md={1}></Col>
         <Col md={10}>
           <Row>
-            <Col md={6} style={{ padding: "0%" }}>
+            <Col md={6} style={{ padding: "0%"}}>
               <Image
-                src="https://apa.az/storage/news/2023/march/09/big/6409d74615a996409d74615a9a16783665346409d74615a926409d74615a93.jpg"
+                src={promo3}
                 width="100%"
                 height="100%"
-              />
+             className="radiusimage" />
             </Col>
-            <Col md={6} className="box">
-              <h1 className="text-center">E-COMMERCE HARVE</h1>
+            <Col md={6} className=" box radiusform">
+             
+            <h1 className="text-center">Login</h1>
+              
               <Form noValidate validated={validated} onSubmit={submitForm}>
-                <Row style={{ margin: "7%" }}>
+                <Row style={{ margin: "7%", marginRight:"0%"}}>
                   <Col>
-                    <Form.Group controlId="validationEmail">
+                    <Form.Group controlId="validationEmail" className="form">
                       <Form.Label>E-mail</Form.Label>
                       <InputGroup hasValidation>
                         <InputGroup.Text id="inputEmail">@</InputGroup.Text>
@@ -122,7 +129,7 @@ function Login() {
                     </Form.Group>
                   </Col>
                 </Row>
-                <Row style={{ margin: "7%" }}>
+                <Row style={{ margin: "7%", marginRight:"0%"}}>
                   <Col>
                     <Form.Group controlId="validationCustomUsername">
                       <Form.Label>Senha</Form.Label>
@@ -142,9 +149,9 @@ function Login() {
                     </Form.Group>
                   </Col>
                 </Row>
-                <Row style={{ margin: "7%" }}>
+                <Row style={{ margin: "7%", marginRight:"0%"}}>
                   <Col className="d-grid gap-2">
-                    <Button type="submit" size="lg">
+                    <Button type="submit" size="lg" variant="dark">
                       Login
                     </Button>
                   </Col>
@@ -155,6 +162,7 @@ function Login() {
         </Col>
       </Row>
     </Container>
+    </>
   );
 }
 

@@ -36,9 +36,11 @@ function ListaProdutos() {
     }
 
     return (
-        <Container fluid >
+        <>
+        <h1 className="font titles">All products</h1>
+        <Container fluid className="cardForCollection" >
+            <div style={{ maxWidth:"1000px"}} >
             <Row className="justify-content-center" style={{marginTop:"50px"}} >
-            <div style={{textAlign:"center"}}><h1>Collection</h1></div>
                 {produtos.map((produto) => {
                     return (
                         <CardProduto
@@ -51,7 +53,9 @@ function ListaProdutos() {
                     )
                 })}
             </Row>
+            </div>
          </Container>
+         </>
     );
 }
 

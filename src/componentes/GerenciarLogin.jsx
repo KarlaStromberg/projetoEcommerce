@@ -65,9 +65,11 @@ function GerenciarLogin()
           <i className="fa fa-shopping-cart fa-2x"> </i>
         </a>
       </Col>
-      <Col md={7}>
-        <i className="fa fa-user"> {nomeUsario}</i>
-        <i className="fa fa-at"> {emailUsuario}</i>
+      <Col md={7} style={{ textTransform: "lowercase"}} >
+        <div style={{marginTop:"-10px"}}>
+        <i className="fa fa-user"> <span className="font">{nomeUsario}</span></i>
+        <i className="fa fa-at"> <span className="font">{emailUsuario}</span></i>
+        </div>
       </Col>
       <Col md={2}>
         <Button variant="light" onClick={() => removerDadosLocalStorage()}>
