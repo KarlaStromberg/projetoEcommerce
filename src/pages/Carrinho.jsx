@@ -17,7 +17,7 @@ function Carrinho() {
   return (
     <>
     <NavBar/>
-      <Container style={{paddingTop:"100px"}}>
+      <Container style={{paddingTop:"150px"}} className="font">
         <Row className="justify-content-md-center" style={{paddingBottom:"20px"}} >
           <Col md={2} >
             <h1>Cart</h1>
@@ -42,7 +42,7 @@ function Carrinho() {
                       <td> {produtoCarrinho.idProduto}</td>
                       <td> {produtoCarrinho.nomeProduto}</td>
                       <td> {produtoCarrinho.descricaoProduto}</td>
-                      <td> {produtoCarrinho.precoProduto} R$</td>
+                      <td> R$ {produtoCarrinho.precoProduto} </td>
                       <td>
                         <Button
                           onClick={() =>
