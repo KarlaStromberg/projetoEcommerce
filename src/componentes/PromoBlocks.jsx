@@ -14,7 +14,7 @@ function PromoBlocks() {
         <Card className="marginForBlocks" bg="light" border="light">
             <Card.Img variant="top" src={promo1}  alt="" className="card-image-top"/>
             <Card.Body>
-              <Card.Title>Smartphones</Card.Title>
+              <Card.Title>Celulares</Card.Title>
               <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget leo quam. Duis interdum quam non turpis malesuada, vitae luctus neque laoreet. </Card.Text>
               <Button variant='dark' href='/login'>View Collection</Button>
             </Card.Body>
@@ -36,7 +36,7 @@ function PromoBlocks() {
           <Card className="marginForBlocks" bg="light" border="light">
             <Card.Img variant="top" src={promo3} alt="" className="card-image-top"/>
             <Card.Body>
-              <Card.Title>Computers</Card.Title>
+              <Card.Title>Computadores</Card.Title>
               <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget leo quam. Duis interdum quam non turpis malesuada, vitae luctus neque laoreet. </Card.Text>
               <Button variant='dark' href='/login'>View Collection</Button>
             </Card.Body>
