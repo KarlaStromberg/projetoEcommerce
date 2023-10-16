@@ -90,3 +90,8 @@
 .white a{
     color:white;
 }
+
+.coverslideshow{
+    object-fit: cover;
+    height: 90vh;
+}
