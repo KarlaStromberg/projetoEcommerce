@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { Button, Col, Container, Row, Table } from "react-bootstrap";
 import { CarrinhoContext } from "../hooks/CarrinhoContext";
 import NavBar from "../componentes/NavBar";
+import Footer from "../componentes/Footer";
 
 function Carrinho() {
   const { listaProdutosCarrinho, removerProduto } = useContext(CarrinhoContext);
@@ -17,7 +18,7 @@ function Carrinho() {
   return (
     <>
     <NavBar/>
-      <Container style={{paddingTop:"150px"}} className="font">
+      <Container style={{paddingTop:"150px", height:"580px"}} className="font">
         <Row className="justify-content-md-center" style={{paddingBottom:"20px"}} >
           <Col md={2} >
             <h1>Cart</h1>
@@ -25,7 +26,7 @@ function Carrinho() {
         </Row>
         <Row>
           <Col>
-            <Table striped bordered hover>
+            <Table striped bordered hover variant="info">
               <thead>
                 <tr>
                   <th>ID</th>
@@ -61,6 +62,7 @@ function Carrinho() {
           </Col>
         </Row>
       </Container>
+      <Footer/>
     </>
   );
 }

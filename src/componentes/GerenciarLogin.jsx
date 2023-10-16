@@ -1,6 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 import { Badge, Button, Col, Row } from "react-bootstrap";
 import { CarrinhoContext } from "../hooks/CarrinhoContext";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBagShopping} from "@fortawesome/free-solid-svg-icons";
 
 function GerenciarLogin() 
 {
@@ -62,8 +64,9 @@ function GerenciarLogin()
           >
             {numeroProdutosCarrinho}
           </Badge>
-          <i className="fa fa-shopping-cart fa-2x"> </i>
-        </a>
+          
+          <FontAwesomeIcon icon={faBagShopping} size="2xl" style={{ color: "#ffffff"}}/>      </a>
+          
       </Col>
       <Col md={7} style={{ textTransform: "lowercase"}} >
         <div style={{marginTop:"-10px"}}>

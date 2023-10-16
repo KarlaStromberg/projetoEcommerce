@@ -14,6 +14,7 @@ import { toast } from "react-toastify";
 import "../assets/css/login.css";
 import promo3 from "../assets/images/promo3.jpg"
 import NavBar from "../componentes/NavBar"
+import Footer from "../componentes/Footer";
 
 function Login() {
   const [validated, setValidated] = useState(false);
@@ -93,7 +94,7 @@ function Login() {
     <>
     <NavBar/>
     <Container className="font">
-      <Row style={{ marginTop: "9%"}}>
+      <Row style={{ marginTop: "8%"}}>
         <Col md={1}></Col>
         <Col md={10}>
           <Row>
@@ -162,6 +163,7 @@ function Login() {
         </Col>
       </Row>
     </Container>
+    <Footer/>
     </>
   );
 }

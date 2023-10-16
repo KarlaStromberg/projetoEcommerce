@@ -38,7 +38,8 @@ import { RouteApp } from "./route";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import CarrinhoContextProvider from "./hooks/CarrinhoContext";
-import "font-awesome/css/font-awesome.css"
+import "font-awesome/css/font-awesome.css";
+
 
 function App() {
   return (

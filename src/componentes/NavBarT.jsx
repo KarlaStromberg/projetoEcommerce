@@ -26,7 +26,7 @@ function NavBarT() {
   return (
     <>
       <Navbar
-        className={isScrolled ? '' : 'bg-opacity-50'} 
+        className={isScrolled ? '' : ["bg-opacity-50",  "white a"]} 
         data-bs-theme="dark"
         fixed="top"
         bg="dark"
